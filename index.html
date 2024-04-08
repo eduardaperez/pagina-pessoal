@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="autor" content="Eduarda Perez Kozarewicz">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sua+Fonte">
-    <title>Eduarda Kozarewicz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"/>
+    <title>Eduarda Kozarewicz Portifólio</title>
 </head>
 <body>
     <header>
         <a href="index.html">
-            <img id="logo-ek" src="img/logo-ek" alt="logo-ek">
+            <img id="logo" src="img/logo.svg" alt="logo">
         </a>
         <nav>
             <ul>
-                <li><a class="azul" href="#sobre">Sobre</a></li>
-                <li><a class="verde" href="#projetos">Projetos</a></li>
-                <li><a class="laranja" href="#contato">Contato</a></li>
-                <li><a class="vermelho" href="#curriculo">Currículo</a></li>
+                <li><a class="azul title" href="#sobre">Sobre</a></li>
+                <li><a class="verde  title" href="#projetos">Projetos</a></li>
+                <li><a class="laranja  title" href="#contato">Contato</a></li>
+                <li><a class="vermelho  title" href="#curriculo">Currículo</a></li>
             </ul>
         </nav>
         <div class="box-canto-superior">
@@ -32,38 +31,67 @@
         </div>
     </header>
     <main>
-        <div id="apresentacao">
-            <h2 class="laranja">Olá Mundo!</h2>
-            <h2 class="branco">Meu nome é Eduarda Perez Kozarewicz</h2>
+        <div class="text" id="apresentacao">
+            <h2 class="laranja" style="font-size: 18px;">Hello World!</h2>
+            <h2 class="branco" style="margin-top: 10px;">Sou Eduarda Perez;</h2>
         </div>
 
         <div id="sobre">
-            <div id="quadro-sobre">
-                <h2 class="azul" class="titulo">Sobre</h2>
+            <div class="text" id="quadro-sobre">
+                <h2 class="azul title">Sobre</h2>
                 <br>
-                <p>Bem vindo à minha página pessoal! Sou a Eduarda, tenho 32 anos, e sou estudante de Análise e Desenvlvimento de Sitemas. Atualmente estou no meu terceiro período na Universidade Positivo.</p>
+                <p>Bem vindo à minha página pessoal! Sou a Eduarda, tenho 32 anos e curso Análise e Desenvlvimento de Sitemas. Atualmente estou no meu terceiro período na Universidade Positivo.</p>
                 <p>Mas como cheguei aqui? Desde nova sempre tive vontade de fazer faculdade, mas não consegui por dois motivos: falta de oportunidade e não saber o que cursar. Acredito que saímos do ensido médio com grandes espectativas para o mundo adulto, mas não sabemos realmente como é difícil se manter sozinha nele. Saí de casa e fui trabalhar na área de beleza e vendas, e nela fiquei por toda minha vida profissional. Mas depois de muitos anos, revolvi realizar meu sonho do ensino superior.</p>
                 <p>Após muita pesquisa, estudo e tentativas frustradas, conheci a área de desenvolvimento, onde não só fiquei deslumbrada pela oportunidade de melhorara a vida das pessoas através do meu trabalho, mas também me encantei por cada código e desafio superado. Não e arrependo de estar começando apenas agora, pois consegui desenvolver muitas habilidades na minha vida profissional que sempre levarei comigo. Na verdade, me sinto confiante, pois sei que com a maturidade que adquiri, vou dar tudo de mim para chegar onde desejo.</p>
                 <p>Sei que ainda tenho muito para aprender, estou apenas no início desta nova vida. Mas estou cheia de energia e vontade de aprender cada vez mais. Meu novo sonho é fazer parte de uma equipe incrível, onde possamos aprender juntos, superar os obstáculos e mudar o mundo. </p>
             </div>
-            <img id="imagem-perfil" src="img/sobre.jpg" alt="imgSobre"/>
+            <img id="imagem-perfil" src="img/sobre.jpg" alt="imagemEduarda"/>
         </div>
 
-        <div id="projeto">
+        <div class="text" id="projeto">
             <div id="quadro-projeto">
-                <h2 class="vermelho" class="titulo">Projetos</h2>
+                <h2 class="vermelho title">Projetos</h2>
+                <br>
                 <p>bla bla bla 2</p>
+                <div class="container-projetos">
+                    <div class="projeto ativo">
+                        <a href="https://github.com/eduardaperez/ProjetoWebBasico" target="_blank">
+                            <img src="/img/embreve.png" alt="Em breve">
+                            <h3>Projeto 1</h3>
+
+                            <div class="informacoes-projeto">
+                                <p>Esse projeto estará disponível em breve</p>
+                                <p>Ver projeto no GitHub</p>
+                            </div>
+                        </a>
+                    </div>
+                    <button class="btn-mais-projetos">Mostrar Mais</button>
+                </div>
             </div>
-            <img id="imagem-projeto" src="img/sobre.jpg" alt="imgProjeto">
+            <img id="imagem-projeto" src="img/sobre.jpg" alt="imagensProjetos">
         </div>
 
-        <div id="contato">
-            <div class="escrita">
-                <h2 class="verde" class="titulo">Contato</h2>
-                <p>Ape</p>
-            </div>
-            <div class="imagens">
-                <img src="img/contato.png" alt="imgContato">
+        <div class="text" id="contato">
+            <div id="quadro-contato">
+                <h2 class="verde title">Contato</h2>
+                <br>
+                <div>
+                    <form id="formulario-contato" action="contato" method="post">
+                        <div>
+                            <label for="name">Deixe seu nome:</label>
+                            <input type="text" name="name" placeholder="Nome" required> 
+                        </div>
+                        <div>
+                            <label for="email">Insira seu melhor email:</label>
+                            <input type="email" name="email" placeholder="Email" required> 
+                        </div>
+                        <div>
+                            <label for="message">Deixe sua mensagem:</label>
+                            <textarea name="message" id="message" placeholder="Mensagem" cols="80" rows="15"></textarea> 
+                        </div>
+                    </form>
+                    <button type="submit">Enviar</button>
+                </div>
             </div>
         </div>
     </main>
@@ -74,6 +102,27 @@
             <div class="marca6"></div>
             <div class="marca7"></div>
         </div>
+        <div class="title" id="apresentacao-final">
+            <p>Obrigada por chegar até aqui!</p>
+            <p>2024</p>
+        </div>
+        <ul id="icones">
+            <li>
+                <a href="https://www.linkedin.com/in/eduarda-perezk/" title="linkedin" target="_blank" >
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/554188835544" title="whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/eduardaperez" title="github" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>
