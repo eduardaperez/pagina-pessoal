@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="autor" content="Eduarda Perez Kozarewicz">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sua+Fonte">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -13,14 +14,14 @@
 <body>
     <header>
         <a href="index.html">
-            <img id="logo" src="img/logo.svg" alt="logo">
+            <img class="logo" src="img/logo.svg" alt="logo">
         </a>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a class="azul title" href="#sobre">Sobre</a></li>
-                <li><a class="verde  title" href="#projetos">Projetos</a></li>
+                <li><a class="verde  title" href="#projeto">Projetos</a></li>
                 <li><a class="laranja  title" href="#contato">Contato</a></li>
-                <li><a class="vermelho  title" href="#curriculo">Currículo</a></li>
+                <li><a class="vermelho title" href="#curriculo">Currículo</a></li>
             </ul>
         </nav>
         <div class="box-canto-superior">
@@ -31,47 +32,79 @@
         </div>
     </header>
     <main>
-        <div class="text" id="apresentacao">
+        <div id="apresentacao">
             <h2 class="laranja" style="font-size: 18px;">Hello World!</h2>
-            <h2 class="branco" style="margin-top: 10px;">Sou Eduarda Perez;</h2>
+            <h2 style="margin-top: 10px;">Sou Eduarda Perez;</h2>
         </div>
 
-        <div id="sobre">
-            <div class="text" id="quadro-sobre">
-                <h2 class="azul title">Sobre</h2>
+        <section id="sobre" class="quadro">
+            <div id="quadro-sobre">
+                <h2 class="vermelho title">Sobre</h2>
                 <br>
                 <p>Bem vindo à minha página pessoal! Sou a Eduarda, tenho 32 anos e curso Análise e Desenvlvimento de Sitemas. Atualmente estou no meu terceiro período na Universidade Positivo.</p>
                 <p>Mas como cheguei aqui? Desde nova sempre tive vontade de fazer faculdade, mas não consegui por dois motivos: falta de oportunidade e não saber o que cursar. Acredito que saímos do ensido médio com grandes espectativas para o mundo adulto, mas não sabemos realmente como é difícil se manter sozinha nele. Saí de casa e fui trabalhar na área de beleza e vendas, e nela fiquei por toda minha vida profissional. Mas depois de muitos anos, revolvi realizar meu sonho do ensino superior.</p>
-                <p>Após muita pesquisa, estudo e tentativas frustradas, conheci a área de desenvolvimento, onde não só fiquei deslumbrada pela oportunidade de melhorara a vida das pessoas através do meu trabalho, mas também me encantei por cada código e desafio superado. Não e arrependo de estar começando apenas agora, pois consegui desenvolver muitas habilidades na minha vida profissional que sempre levarei comigo. Na verdade, me sinto confiante, pois sei que com a maturidade que adquiri, vou dar tudo de mim para chegar onde desejo.</p>
-                <p>Sei que ainda tenho muito para aprender, estou apenas no início desta nova vida. Mas estou cheia de energia e vontade de aprender cada vez mais. Meu novo sonho é fazer parte de uma equipe incrível, onde possamos aprender juntos, superar os obstáculos e mudar o mundo. </p>
             </div>
-            <img id="imagem-perfil" src="img/sobre.jpg" alt="imagemEduarda"/>
-        </div>
+            <img id="imagem-sobre" src="img/sobre.jpg" alt="imagemEduarda"/>
+        </section>
 
-        <div class="text" id="projeto">
+        <section id="projeto" class="quadro">
             <div id="quadro-projeto">
-                <h2 class="vermelho title">Projetos</h2>
-                <br>
-                <p>bla bla bla 2</p>
-                <div class="container-projetos">
-                    <div class="projeto ativo">
-                        <a href="https://github.com/eduardaperez/ProjetoWebBasico" target="_blank">
+                <h2 class="azul title">Projetos</h2>
+
+                <div class="container-projetos"> 
+                    <div class="projeto inativo">
+                        <img class="imagem-projeto" src="/img/em-breve.png" alt="Em breve">
+
+                        <div class="informacoes-projeto">
+                            <h3>Em breve</h3>
+                            <p>Esse projeto estará disponível em breve</p>
+                                <button class="btn-projetos"><a href="https://github.com/eduardaperez/" target="_blank">Ver projeto no GitHub</a></button>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- <div class="container-projetos"> 
+                    <div class="projeto inativo">
+                        <a href="https://github.com/eduardaperez/" target="_blank">
                             <img src="/img/embreve.png" alt="Em breve">
                             <h3>Projeto 1</h3>
-
                             <div class="informacoes-projeto">
                                 <p>Esse projeto estará disponível em breve</p>
                                 <p>Ver projeto no GitHub</p>
                             </div>
                         </a>
                     </div>
-                    <button class="btn-mais-projetos">Mostrar Mais</button>
+                    <div class="projeto inativo">
+                        <a href="https://github.com/eduardaperez/" target="_blank">
+                            <img src="/img/embreve.png" alt="Em breve">
+                            <h3>Projeto 2</h3>
+                            <div class="informacoes-projeto">
+                                <p>Esse projeto estará disponível em breve</p>
+                                <p>Ver projeto no GitHub</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projeto inativo">
+                        <a href="https://github.com/eduardaperez/" target="_blank">
+                            <img src="/img/embreve.png" alt="Em breve">
+                            <h3>Projeto 3</h3>
+                            <div class="informacoes-projeto">
+                                <p>Esse projeto estará disponível em breve</p>
+                                <p>Ver projeto no GitHub</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <img id="imagem-projeto" src="img/sobre.jpg" alt="imagensProjetos">
-        </div>
+                    <button class="btn-mais-projetos">Mostrar Mais</button>
+                </div>-->
 
-        <div class="text" id="contato">
+
+
+            </div>
+            <!-- <img class="imagem-projeto" src="img/sobre.jpg" alt="imagensProjetos"> -->
+        </section>
+
+        <section id="contato" class="quadro">
             <div id="quadro-contato">
                 <h2 class="verde title">Contato</h2>
                 <br>
@@ -93,8 +126,9 @@
                     <button type="submit">Enviar</button>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
+
     <footer>
         <div class="box-canto-inferior">
             <div class="marca4"></div>
@@ -106,23 +140,25 @@
             <p>Obrigada por chegar até aqui!</p>
             <p>2024</p>
         </div>
-        <ul id="icones">
-            <li>
-                <a href="https://www.linkedin.com/in/eduarda-perezk/" title="linkedin" target="_blank" >
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://wa.me/554188835544" title="whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/eduardaperez" title="github" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-        </ul>
+        <nav>
+            <ul id="redes-sociais">
+                <li>
+                    <a href="https://www.linkedin.com/in/eduarda-perezk/" title="linkedin" target="_blank" >
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/554188835544" title="whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/eduardaperez" title="github" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
