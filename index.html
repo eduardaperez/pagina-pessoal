@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sua+Fonte">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"/>
-    <title>Eduarda Kozarewicz Portifólio</title>
+    <title>Eduarda Kozarewicz</title>
 </head>
 <body>
     <header>
@@ -53,15 +53,16 @@
 
                 <div class="container-projetos"> 
                     <div class="projeto inativo">
-                        <img class="imagem-projeto" src="/img/em-breve.png" alt="Em breve">
-
-                        <div class="informacoes-projeto">
+                        
+                        <div id="projeto0" class="informacoes-projeto">
                             <h3>Em breve</h3>
-                            <p>Esse projeto estará disponível em breve</p>
-                                <button class="btn-projetos"><a href="https://github.com/eduardaperez/" target="_blank">Ver projeto no GitHub</a></button>
-                            </div>
+                            <p>Esse projeto ajbdbhahbckjA CSKJcab xka bO\CSB KL bcjkBÇon estará disponível em breve</p>
+                            <button id="btn-projetos"><a href="https://github.com/eduardaperez/" target="_blank">Ver projeto no GitHub</a></button>
                         </div>
+                    </div>
                 </div>
+            </div>
+            <img id="img-projeto0" class="imagem-projeto" src="/img/em-breve.png" alt="Em breve">
 
                 <!-- <div class="container-projetos"> 
                     <div class="projeto inativo">
@@ -100,7 +101,6 @@
 
 
 
-            </div>
             <!-- <img class="imagem-projeto" src="img/sobre.jpg" alt="imagensProjetos"> -->
         </section>
 
@@ -112,18 +112,18 @@
                     <form id="formulario-contato" action="contato" method="post">
                         <div>
                             <label for="name">Deixe seu nome:</label>
-                            <input type="text" name="name" placeholder="Nome" required> 
+                            <input class="input-dados" type="text" name="name" placeholder="Nome" required> 
                         </div>
                         <div>
                             <label for="email">Insira seu melhor email:</label>
-                            <input type="email" name="email" placeholder="Email" required> 
+                            <input class="input-dados type="email" name="email" placeholder="Email" required> 
                         </div>
                         <div>
                             <label for="message">Deixe sua mensagem:</label>
-                            <textarea name="message" id="message" placeholder="Mensagem" cols="80" rows="15"></textarea> 
+                            <textarea class="input-dados" name="message" id="mensagem" placeholder="Mensagem"></textarea> 
                         </div>
                     </form>
-                    <button type="submit">Enviar</button>
+                    <button id="btn-contato" type="submit">Enviar</button>
                 </div>
             </div>
         </section>
@@ -138,7 +138,10 @@
         </div>
         <div class="title" id="apresentacao-final">
             <p>Obrigada por chegar até aqui!</p>
-            <p>2024</p>
+            <div>
+                <img class="logo-rodape" src="img/logo.svg" alt="logo">
+                <p>2024</p>
+            </div>
         </div>
         <nav>
             <ul id="redes-sociais">

@@ -36,11 +36,12 @@ html {
 }
 
 body{
-     background-color: var(--preto);
+    background-color: var(--preto);
     animation: gradient-animation 5s ease infinite;
     font-family: text;
+    letter-spacing: 2px;
     margin: 0 auto;
-    max-width: 80%;
+    
 }
 
 /*Header*/
@@ -124,6 +125,9 @@ body main {
 
     flex-direction: column;
     position: relative;
+
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 #apresentacao {
@@ -155,7 +159,6 @@ body main {
     gap: 5px;
     padding: 40px 180px 40px 40px;
 
-    letter-spacing: 1px;
     width: 80%; 
     border-radius: 10px;
     margin-right: 20%;
@@ -180,7 +183,6 @@ body main {
     gap: 5px;
     padding: 40px 40px 40px 180px;
 
-    letter-spacing: 1px;
     border-radius: 10px;
     width: 80%; 
     margin-left: 20%;
@@ -209,33 +211,30 @@ body main {
     width: 100%;
     height: 100%;
     gap: 15px;
-    /* opacity: 0; */
-    transition: 0.3s;
 
     padding: 20px;
     gap: 15px;
 }
 
-.btn-projetos {
+#btn-projetos {
     display: flex;
+    justify-content: center;
     background: none;
     border: 3px solid var(--azul);
     border-radius: 10px;
     width: 180px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 15px;
     margin: 0 auto;
     cursor: pointer;
-    position: absolute;
-    right: 20px;
 }
 
-.btn-projetos a {
+#btn-projetos a {
     color: var(--azul);
     font-family: title;
 }
 
-.btn-projetos:hover {
+#btn-projetos:hover {
     background-color: var(--preto);
     transition: 0.5s;
 }
@@ -298,7 +297,6 @@ body main {
     gap: 5px;
     padding: 40px;
 
-    letter-spacing: 1px;
     border-radius: 10px;
     width: 100%; 
     margin-bottom: 20vh;
@@ -314,30 +312,80 @@ body main {
 }
 
 #formulario-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
 
+#formulario-contato div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 30px;
+
+    gap: 5px;
+}
+
+.input-dados {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#mensagem {
+    resize: none;
+    height: 200px;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+#btn-contato {
+    display: flex;
+    justify-content: center;
+    color: var(--verde);
+    font-family: title;
+
+    background: none;
+    border: 3px solid var(--verde);
+    border-radius: 10px;
+    width: 180px;
+    padding: 10px;
+
+    font-size: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#btn-contato:hover {
+    background-color: var(--preto);
+    transition: 0.5s;
 }
 
 
 /*Footer*/
 
-footer {
+body footer {
+
     background-color: var(--cinza-escuro);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    align-items: end;
+    position: relative;
+    padding: 0 25px;
     width: 100%;
     height: 100px;
 }
 
 .box-canto-inferior {
-    background-color: var(--cinzaEscuro);
-    margin: 20px;
     display: flex;
     align-items: end;
-    justify-content: flex-start;
-
-    height: 15vh;
 
     z-index: 50;
 }
@@ -345,8 +393,7 @@ footer {
 .marca7 {
     width: 15px;
     height: 60px;
-    background-color: var(--azul);
-    
+    background-color: var(--azul);   
 }
 
 .marca6 {
@@ -371,16 +418,30 @@ footer {
     color: var(--preto);
     display: flex;
     align-items: center;
-    display: inline;
+    padding-bottom: 25px;
+
+    flex-direction: column;
+    font-size: 18px;
+    gap: 5px;
+}
+
+#apresentacao-final div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-rodape {
+    height: 25px;
 }
     
 #redes-sociais {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 25px;
 
     gap: 10px;
-    margin-right: 20px;
 }
 
 #redes-sociais li a i {
