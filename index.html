@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,141 +13,102 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img class="logo" src="img/logo.svg" alt="logo">
-        </a>
-        <nav>
-            <ul class="menu">
-                <li><a class="azul title" href="#sobre">Sobre</a></li>
-                <li><a class="verde  title" href="#projeto">Projetos</a></li>
-                <li><a class="laranja  title" href="#contato">Contato</a></li>
-                <li><a class="vermelho title" href="#curriculo">Currículo</a></li>
-            </ul>
-        </nav>
-        <div class="box-canto-superior">
-            <div class="marca0"></div>
-            <div class="marca1"></div>
-            <div class="marca2"></div>
-            <div class="marca3"></div>
+        <div id="linha-superior"></div>
+        <div id="navegacao">
+            <a href="index.html">
+                <img class="logo" src="img/logo-ep.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#projetos">projetos</a></li>
+                    <li><a href="#contato">contato</a></li>
+                    <li><a href="#curriculo">currículo</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <div id="apresentacao">
-            <h2 class="laranja" style="font-size: 18px;">Hello World!</h2>
-            <h2 style="margin-top: 10px;">Sou Eduarda Perez;</h2>
-        </div>
-
-        <section id="sobre" class="quadro">
-            <div id="quadro-sobre">
-                <h2 class="vermelho title">Sobre</h2>
-                <br>
-                <p>Bem vindo à minha página pessoal! Sou a Eduarda, tenho 32 anos e curso Análise e Desenvlvimento de Sitemas. Atualmente estou no meu terceiro período na Universidade Positivo.</p>
-                <p>Mas como cheguei aqui? Desde nova sempre tive vontade de fazer faculdade, mas não consegui por dois motivos: falta de oportunidade e não saber o que cursar. Acredito que saímos do ensido médio com grandes espectativas para o mundo adulto, mas não sabemos realmente como é difícil se manter sozinha nele. Saí de casa e fui trabalhar na área de beleza e vendas, e nela fiquei por toda minha vida profissional. Mas depois de muitos anos, revolvi realizar meu sonho do ensino superior.</p>
+        <section id="sobre">
+            <div id="apresentacao">
+                <div>
+                    <h2>Olá!</h2>
+                    <h2>Eu sou a Eduarda.</h2>
+                </div>
+                <p>Sou desenvolvedora apaixonada por livros, séries, filmes e animes, imersa no mundo da tecnologia e nerd. Estou sempre buscando novos conhecimentos e desafios.</p>
+                <a id="btn-sobre" href="#contato">contato</a>
             </div>
-            <img id="imagem-sobre" src="img/sobre.jpg" alt="imagemEduarda"/>
+            <div id="acima-img">
+                <img id="img-sobre" src="img/sobre.jpg" alt="foto Eduarda">
+            </div>
         </section>
-
-        <section id="projeto" class="quadro">
-            <div id="quadro-projeto">
-                <h2 class="azul title">Projetos</h2>
-
-                <div class="container-projetos"> 
-                    <div class="projeto inativo">
-                        
-                        <div id="projeto0" class="informacoes-projeto">
-                            <h3>Em breve</h3>
-                            <p>Esse projeto ajbdbhahbckjA CSKJcab xka bO\CSB KL bcjkBÇon estará disponível em breve</p>
-                            <button id="btn-projetos"><a href="https://github.com/eduardaperez/" target="_blank">Ver projeto no GitHub</a></button>
+        
+        <section class="projetos">
+            <svg id="wave-purple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7747c4" fill-opacity="1" d="M0,64L11.4,80C22.9,96,46,128,69,133.3C91.4,139,114,117,137,138.7C160,160,183,224,206,245.3C228.6,267,251,245,274,224C297.1,203,320,181,343,160C365.7,139,389,117,411,101.3C434.3,85,457,75,480,85.3C502.9,96,526,128,549,144C571.4,160,594,160,617,154.7C640,149,663,139,686,122.7C708.6,107,731,85,754,101.3C777.1,117,800,171,823,181.3C845.7,192,869,160,891,149.3C914.3,139,937,149,960,144C982.9,139,1006,117,1029,128C1051.4,139,1074,181,1097,197.3C1120,213,1143,203,1166,181.3C1188.6,160,1211,128,1234,133.3C1257.1,139,1280,181,1303,197.3C1325.7,213,1349,203,1371,197.3C1394.3,192,1417,192,1429,192L1440,192L1440,0L1428.6,0C1417.1,0,1394,0,1371,0C1348.6,0,1326,0,1303,0C1280,0,1257,0,1234,0C1211.4,0,1189,0,1166,0C1142.9,0,1120,0,1097,0C1074.3,0,1051,0,1029,0C1005.7,0,983,0,960,0C937.1,0,914,0,891,0C868.6,0,846,0,823,0C800,0,777,0,754,0C731.4,0,709,0,686,0C662.9,0,640,0,617,0C594.3,0,571,0,549,0C525.7,0,503,0,480,0C457.1,0,434,0,411,0C388.6,0,366,0,343,0C320,0,297,0,274,0C251.4,0,229,0,206,0C182.9,0,160,0,137,0C114.3,0,91,0,69,0C45.7,0,23,0,11,0L0,0Z"></path></svg>
+            <h2 id="projetos">Projetos</h2>
+            <div class="container-projetos">
+                <div class="projeto">
+                    <a href="https://github.com/eduardaperez/" target="_blank">
+                        <h3>Em breve</h3>
+                        <p>Este projeto estará disponível em breve</p>
+                        <button class="btn-ver">ver</button>
+                        <div class="foto-projeto">
+                            <img src="img/embreve.png" alt="em breve">
                         </div>
-                    </div>
+                    </a>
+                </div>
+                <div class="projeto">
+                    <a href="https://github.com/eduardaperez/" target="_blank">
+                        <h3>Em breve</h3>
+                        <p>Este projeto estará disponível em breve</p>
+                        <button class="btn-ver">ver</button>
+                        <div class="foto-projeto">
+                            <img src="img/embreve.png" alt="em breve">
+                        </div>
+                    </a>
+                </div>
+                <div class="projeto">
+                    <a href="https://github.com/eduardaperez/" target="_blank">
+                        <h3>Em breve</h3>
+                        <p>Este projeto estará disponível em breve</p>
+                        <button class="btn-ver">ver</button>
+                        <div class="foto-projeto">
+                            <img src="img/embreve.png" alt="em breve">
+                        </div>
+                    </a>
                 </div>
             </div>
-            <img id="img-projeto0" class="imagem-projeto" src="/img/em-breve.png" alt="Em breve">
-
-                <!-- <div class="container-projetos"> 
-                    <div class="projeto inativo">
-                        <a href="https://github.com/eduardaperez/" target="_blank">
-                            <img src="/img/embreve.png" alt="Em breve">
-                            <h3>Projeto 1</h3>
-                            <div class="informacoes-projeto">
-                                <p>Esse projeto estará disponível em breve</p>
-                                <p>Ver projeto no GitHub</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="projeto inativo">
-                        <a href="https://github.com/eduardaperez/" target="_blank">
-                            <img src="/img/embreve.png" alt="Em breve">
-                            <h3>Projeto 2</h3>
-                            <div class="informacoes-projeto">
-                                <p>Esse projeto estará disponível em breve</p>
-                                <p>Ver projeto no GitHub</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="projeto inativo">
-                        <a href="https://github.com/eduardaperez/" target="_blank">
-                            <img src="/img/embreve.png" alt="Em breve">
-                            <h3>Projeto 3</h3>
-                            <div class="informacoes-projeto">
-                                <p>Esse projeto estará disponível em breve</p>
-                                <p>Ver projeto no GitHub</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                    <button class="btn-mais-projetos">Mostrar Mais</button>
-                </div>-->
-
-
-
-            <!-- <img class="imagem-projeto" src="img/sobre.jpg" alt="imagensProjetos"> -->
+            <button id="btn-projetos"><a href="https://github.com/eduardaperez/" target="_blank">ver todos</a></button>
         </section>
 
-        <section id="contato" class="quadro">
+        <section class="contato">
+            <svg id="wave-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4FFDD7" fill-opacity="1" d="M0,160L11.4,176C22.9,192,46,224,69,250.7C91.4,277,114,299,137,256C160,213,183,107,206,96C228.6,85,251,171,274,208C297.1,245,320,235,343,218.7C365.7,203,389,181,411,176C434.3,171,457,181,480,192C502.9,203,526,213,549,192C571.4,171,594,117,617,128C640,139,663,213,686,234.7C708.6,256,731,224,754,213.3C777.1,203,800,213,823,202.7C845.7,192,869,160,891,122.7C914.3,85,937,43,960,32C982.9,21,1006,43,1029,80C1051.4,117,1074,171,1097,165.3C1120,160,1143,96,1166,69.3C1188.6,43,1211,53,1234,74.7C1257.1,96,1280,128,1303,128C1325.7,128,1349,96,1371,106.7C1394.3,117,1417,171,1429,197.3L1440,224L1440,0L1428.6,0C1417.1,0,1394,0,1371,0C1348.6,0,1326,0,1303,0C1280,0,1257,0,1234,0C1211.4,0,1189,0,1166,0C1142.9,0,1120,0,1097,0C1074.3,0,1051,0,1029,0C1005.7,0,983,0,960,0C937.1,0,914,0,891,0C868.6,0,846,0,823,0C800,0,777,0,754,0C731.4,0,709,0,686,0C662.9,0,640,0,617,0C594.3,0,571,0,549,0C525.7,0,503,0,480,0C457.1,0,434,0,411,0C388.6,0,366,0,343,0C320,0,297,0,274,0C251.4,0,229,0,206,0C182.9,0,160,0,137,0C114.3,0,91,0,69,0C45.7,0,23,0,11,0L0,0Z"></path></svg>
             <div id="quadro-contato">
-                <h2 class="verde title">Contato</h2>
-                <br>
+                <h2 id="contato" class="title">Contato</h2>
+                <p>Sou especialista em desenvolvimento web e mobile, e tenho uma paixão especial pelo backend. Que tal unirmos forças para dar vida ao seu projeto? Estou animado para colaborar de perto e transformar suas ideias em realidade digital. Vamos nessa?</p>
                 <div>
                     <form id="formulario-contato" action="contato" method="post">
-                        <div>
-                            <label for="name">Deixe seu nome:</label>
-                            <input class="input-dados" type="text" name="name" placeholder="Nome" required> 
-                        </div>
-                        <div>
-                            <label for="email">Insira seu melhor email:</label>
-                            <input class="input-dados type="email" name="email" placeholder="Email" required> 
-                        </div>
-                        <div>
-                            <label for="message">Deixe sua mensagem:</label>
-                            <textarea class="input-dados" name="message" id="mensagem" placeholder="Mensagem"></textarea> 
-                        </div>
+
+                        <input class="input-dados" type="text" name="name" placeholder="Nome" required> 
+
+                        <input class="input-dados" type="email" name="email" placeholder="Email" required> 
+
+                        <input class="input-dados" type="sobre" name="assunto" placeholder="Assunto" required> 
+
+                        <textarea class="input-dados" name="message" id="mensagem" placeholder="Mensagem"></textarea> 
+
                     </form>
                     <button id="btn-contato" type="submit">Enviar</button>
                 </div>
             </div>
-        </section>
+        </section>     
     </main>
-
     <footer>
-        <div class="box-canto-inferior">
-            <div class="marca4"></div>
-            <div class="marca5"></div>
-            <div class="marca6"></div>
-            <div class="marca7"></div>
-        </div>
-        <div class="title" id="apresentacao-final">
-            <p>Obrigada por chegar até aqui!</p>
-            <div>
-                <img class="logo-rodape" src="img/logo.svg" alt="logo">
-                <p>2024</p>
-            </div>
-        </div>
         <nav>
             <ul id="redes-sociais">
                 <li>
                     <a href="https://www.linkedin.com/in/eduarda-perezk/" title="linkedin" target="_blank" >
-                        <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
                 <li>
@@ -162,6 +123,7 @@
                 </li>
             </ul>
         </nav>
+        <div id="linha-inferior"></div>
     </footer>
 </body>
 </html>
