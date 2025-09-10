@@ -24,6 +24,7 @@ Construída com **HTML5** e **CSS3**, a página é responsiva e fácil de navega
 Siga os passos abaixo para abrir a página no seu navegador:
 
 1. Clone o repositório:
-
-   ```bash
    git clone https://github.com/eduardaperez/pagina-pessoal.git
+2. Entre no diretório do projeto:
+   cd pagina-pessoal
+3. Abra o arquivo index.html em seu navegador favorito.
